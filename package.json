@@ -1,0 +1,15 @@
+{
+  "name": "x402-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server for x402 Multi-Service API — 47 pay-per-use AI services on Base chain (USDC)",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.19.0",
+    "@pyrimid/sdk": "^0.2.6"
+  }
+}
