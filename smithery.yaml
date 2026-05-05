@@ -1,0 +1,33 @@
+# Smithery.ai Deployment Configuration
+# https://smithery.ai/docs/deploy
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema definition of client options
+    type: object
+    required:
+      - apiBase
+      - internalKey
+    properties:
+      apiBase:
+        type: string
+        default: "http://localhost:8080"
+        description: "Base URL of the x402 Multi-Service API"
+      internalKey:
+        type: string
+        default: "hermes-mcp-internal-v1"
+        description: "Internal API key for local calls (bypasses x402 payment)"
+  commandFunction:
+    # A function that produces the CLI command for the server
+    |-
+      (config) => ({
+        command: "node",
+        args: ["index.js"],
+        env: {
+          API_BASE: config.apiBase || "http://localhost:8080",
+          INTERNAL_KEY: config.internalKey || "hermes-mcp-internal-v1"
+        }
+      })
+  exampleConfig:
+    apiBase: "http://localhost:8080"
+    internalKey: "hermes-mcp-internal-v1"
