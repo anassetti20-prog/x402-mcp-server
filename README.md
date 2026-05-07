@@ -12,6 +12,8 @@
 [![Node](https://img.shields.io/badge/Node-%3E%3D18-339933?style=flat-square&logo=node.js&logoColor=white)]()
 [![Base](https://img.shields.io/badge/Base-0052FF?style=flat-square&logo=base&logoColor=white)]()
 [![USDC](https://img.shields.io/badge/USDC-2775CA?style=flat-square&logo=circle&logoColor=white)]()
+[![Glama](https://img.shields.io/badge/Glama-EA-6366f1?style=flat-square)](https://glama.ai/mcp/servers/anassetti20-prog/x402-mcp-server)
+[![Glama Score](https://glama.ai/mcp/servers/anassetti20-prog/x402-mcp-server/badges/score.svg)](https://glama.ai/mcp/servers/anassetti20-prog/x402-mcp-server)
 
 ---
 
