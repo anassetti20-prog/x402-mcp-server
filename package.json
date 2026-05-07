@@ -16,13 +16,15 @@
     "extensions": ["./openclaw-entry.ts"],
     "runtimeExtensions": ["./index.js"],
     "install": {
-      "npmSpec": "x402-mcp-server",
-      "defaultChoice": "git",
+      "git": "https://github.com/anassetti20-prog/x402-mcp-server.git",
       "minHostVersion": ">=2026.4.10"
     },
     "compat": {
       "pluginApi": ">=2025.1.0",
       "minGatewayVersion": "2026.4.10"
+    },
+    "build": {
+      "openclawVersion": "2026.5.7"
     },
     "release": {
       "publishToClawHub": true,
