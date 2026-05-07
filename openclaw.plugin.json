@@ -1,0 +1,41 @@
+{
+  "id": "x402-mcp-server",
+  "name": "x402 MCP Server",
+  "description": "47 pay-per-use AI services via x402 micropayments on Base (USDC). Halal-compliant, no subscriptions.",
+  "activation": {
+    "onStartup": false
+  },
+  "setup": {
+    "envVars": ["API_BASE", "INTERNAL_KEY", "X402_WALLET"]
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "apiBase": {
+        "type": "string",
+        "description": "x402 API base URL (default: http://localhost:8080)",
+        "default": "http://localhost:8080"
+      },
+      "internalKey": {
+        "type": "string",
+        "description": "Internal bypass key for local requests"
+      }
+    }
+  },
+  "uiHints": {
+    "apiBase": {
+      "label": "x402 API Base URL",
+      "help": "Base URL of the x402 Multi-Service API (default: http://localhost:8080)",
+      "placeholder": "http://localhost:8080"
+    },
+    "internalKey": {
+      "label": "Internal API Key",
+      "help": "Internal key for bypassing x402 payment (local use only)",
+      "sensitive": true
+    }
+  },
+  "contracts": {
+    "mcpServers": ["x402"]
+  }
+}

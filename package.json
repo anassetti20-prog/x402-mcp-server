@@ -11,5 +11,22 @@
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.19.0",
     "@pyrimid/sdk": "^0.2.6"
+  },
+  "openclaw": {
+    "extensions": ["./openclaw-entry.ts"],
+    "runtimeExtensions": ["./index.js"],
+    "install": {
+      "npmSpec": "x402-mcp-server",
+      "defaultChoice": "git",
+      "minHostVersion": ">=2026.4.10"
+    },
+    "compat": {
+      "pluginApi": ">=2025.1.0",
+      "minGatewayVersion": "2026.4.10"
+    },
+    "release": {
+      "publishToClawHub": true,
+      "publishToNpm": false
+    }
   }
 }
